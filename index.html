@@ -1,1 +1,86 @@
-SEG3525 Labs
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <title>Online Survey</title>
+</head>
+
+<body class="main-body">
+    <header>
+        The Royal Conservatory of Music Survey
+    </header>
+    <div class="body">
+        <h2>Thank you for taking the time to take this survey!</h2>
+        <div class="link-to-website">
+            <h3>Please visit the Royal Conservatory of Music (RCM) website by <a href="https://www.rcmusic.com/"
+                    target="_blank">clicking here</a> or by clicking on the website's preview image below.</h3>
+            <a href="https://www.rcmusic.com/" target="_blank"><img class="webiste-image" src="media/rcm-website.png" alt="RCM Website" width=75%></a>
+        </div>
+
+        <div class="survey-questions">
+            <form id="ui-survey">
+                <div class="personal-info">
+                    <h2 class="question-header">Personal Information</h2>
+                    <p>Name: <input type="text" name="name"></p>
+                    <p>Email address: <input type="email" name="email"></p>
+                </div>
+                <h1>Please answer the following questions regarding the visual aspects of the website: </h1>
+                <div class="questions">
+                    <h2 class="question-header">Overall, how easy do you find it to quickly access the information you need?</h2>
+                    <select class="dropdown-options">
+                        <option value selected>(Select)</option>
+                        <option value="1">Very Difficult</option>
+                        <option value="2">Difficult</option>
+                        <option value="3">Neutral</option>
+                        <option value="4">Easy</option>
+                        <option value="5">Very Easy</option>
+                    </select>
+
+                    <h2 class="question-header">Would you recommend this website to music teachers?</h2>
+                    <div class="radio-options">
+                        <input type="radio" name="recommend" id="recommendYes">
+                        <label for="recommendYes">Yes</label>
+                        <input type="radio" name="recommend" id="recommendNo">
+                        <label for="recommendNo">No</label>
+                    </div>
+
+                    <h2 class="question-header">Which of the following do you think is well implemented? (Select all that apply)</h2>
+                    <div class="checkbox-options">
+                        <div class="checkbox">
+                            <input type="checkbox" name="well-implemented" id="colour-theme">
+                            <label for="colour-theme">Colour scheme</label><br>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" name="well-implemented" id="page-arrangement">
+                            <label for="page-arrangement">Page organization</label><br>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" name="well-implemented" id="coherance">
+                            <label for="coherance">Coherance of different pages</label><br>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" name="well-implemented" id="other">
+                            <label for="other">Other</label><br>
+                        </div>
+                    </div>
+                    
+                    <h2 class="question-header">If you have any comments or opinions on the RCM website, please add them here.</h2>
+                    <textarea name="comments" rows="10" required></textarea>
+                    
+                </div>
+                <button id="submitButton" type="button">Submit Survey</button>
+            </form>
+        </div>
+    </div>
+    <footer class="footer">
+        <small>Website created by Carina T.</small>
+    </footer>
+
+</body> 
+</html>
